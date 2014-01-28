@@ -2,7 +2,8 @@
 ERA 2.0 Web User Interface Prototype
 + JSP 2.1
 + JSTL 1.2
- 
++ Bootstrap-2.3.1
+
 ## Building & running era-2.0-webui from source
 System Requirements
 + Java 6
