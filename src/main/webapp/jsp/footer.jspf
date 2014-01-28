@@ -1,0 +1,53 @@
+<footer style="margin-top: 10px;">
+	<div class="container">
+		<div class="row-fluid">
+			<div class="span12 footer-links">
+				<div class="row-fluid">
+					<div class="span3">
+						<h5>Policies</h5>
+						<ul class="footer-divider unstyled">
+							<li><a href="http://guides.library.ualberta.ca/content.php?pid=87240&sid=648953">Content Policy</a></li>
+							<li><a href="http://guides.library.ualberta.ca/content.php?pid=87240&sid=648953">Mediated Deposit</a></li>
+							<li><a href="http://guides.library.ualberta.ca/content.php?pid=87240&sid=648953">Metadata Policy</a></li>
+
+						</ul>
+					</div>
+					<div class="span3">
+						<h5>Get Help</h5>
+						<ul class="footer-divider unstyled">
+							<li><a href="http://guides.library.ualberta.ca/content.php?pid=87240&sid=648971">How to Deposit?</a></li>
+							<li><a href="http://guides.library.ualberta.ca/content.php?pid=87240&sid=648971">FAQ</a></li>
+							<li><a href="https://era.library.ualberta.ca/jsp/public/contactUs.jsp">Contact Us</a></li>
+						</ul>
+					</div>
+					<div class="span6">
+						<h5>
+							<a href="http://www.ualberta.ca/">University of Alberta</a>
+						</h5>
+						<div class="row-fluid footer-divider"">
+							<div class="span6">
+								<ul class="unstyled">
+									<li><a href="http://www.beartracks.ualberta.ca/">Bear Tracks</a></li>
+									<li><a href="http://www.emergencies.ualberta.ca/">Emergency</a></li>
+									<li><a href="http://www.library.ualberta.ca/">Libraries</a></li>
+									<li><a href="http://www.campusmap.ualberta.ca/">Maps</a></li>
+								</ul>
+							</div>
+							<div class="span5">
+								<ul class="unstyled">
+									<li><a href="http://www.uofaweb.ualberta.ca/policies/">Policies</a></li>
+									<li><a href="http://www.uofaweb.ualberta.ca/ualberta_about/privacy.html">Privacy</a></li>
+									<li><a href="http://www.ualberta.ca/ELEARNING/">WebCT</a></li>
+									<li><a href="https://webmail.ualberta.ca/">Webmail</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<div class="container">
+	<p class="copyright">&copy; Copyright 2013 University of Alberta Libraries</p>
+</div>

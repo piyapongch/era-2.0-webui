@@ -1,0 +1,108 @@
+
+<!-- more like this -->
+<div id="mlt" class="collapse">
+	<div class=" alert alert-success">
+		<a class="close" href="#" onclick="$('#mlt').collapse('toggle');">&times;</a>
+		<ul class="unstyled search-results">
+			<li>
+				<div class="search-result">
+					<h5>
+						<a href="${ctx}/jsp/item.jsp">A study of the colloidal stability of mixed abrasive slurries of silica and
+							ceria nanoparticles for chemical mechanical polishing</a>
+					</h5>
+					<ul class="inline details">
+						<li data-toggle="tooltip" data-original-title="Item type"><i class="icon-tag"></i> Thesis</li>
+						<li data-toggle="tooltip" data-original-title="Date accepted"><i class="icon-calendar"></i>Mar 30, 2012 9:30
+							AM</li>
+						<li data-toggle="tooltip" data-original-title="Author"><i class="icon-user"></i> Nolan, Lucy M</li>
+						<li data-toggle="tooltip" data-original-title="Subject"><i class="icon-book"></i> Chemical Mechanical
+							Polishing</li>
+					</ul>
+					<script>
+						$('.search-result .details span').tooltip();
+					</script>
+					<div class="desc">Slurry stability is an important factor in Chemical Mechanical Polishing (CMP) efficiency.
+						However, few studies have been done in this respect. In settling tests at pH 4, adding various amounts of ceria to
+						colloidal silica slurries was shown to change the stability of the resulted mixed abrasive slurries (5 wt% of
+						silica). Within a range of ceria-to-silica weight ratios, known as the</div>
+					<div class="actions">
+						<a href="#"><i class="icon-download-alt"> </i>download</a> (103) <a href="#" title="Add this item to your cart."><i
+							class="icon-shopping-cart"> </i>add to cart </a>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="search-result">
+					<h5>
+						<a href="${ctx}/jsp/item.jsp">Modification of the Stress-Strain Curve for High-Strength Line Pipe Steel</a>
+					</h5>
+					<ul class="inline details">
+						<li data-toggle="tooltip" data-original-title="Item type"><i class="icon-tag"></i> Thesis</li>
+						<li data-toggle="tooltip" data-original-title="Date accepted"><i class="icon-calendar"></i>Mar 30, 2012 9:30
+							AM</li>
+						<li data-toggle="tooltip" data-original-title="Author"><i class="icon-user"></i> Jonsson, Katherine M.</li>
+						<li data-toggle="tooltip" data-original-title="Subject"><i class="icon-book"></i> Chemical Mechanical
+							Polishing</li>
+					</ul>
+					<script>
+						$('.search-result .details span').tooltip();
+					</script>
+					<div class="desc">This thesis presents work performed to improve the work hardening behaviour of an X80
+						microalloyed steel through various Interrupted Thermal Treatments (ITT). The aim of this work was to determine the
+						relationships between thermal history, microstructure and mechanical properties through both qualitative and
+						quantitative measures. A Continuous Cooling Transformation</div>
+					<div class="actions">
+						<a href="#"><i class="icon-download-alt"> </i>download</a> (103) <a href="#" title="Add this item to your cart."><i
+							class="icon-shopping-cart"> </i>add to cart </a>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+<!-- workflow history -->
+<div id="history" class="collapse">
+	<div class=" alert alert-warning">
+		<a class="close" href="#" onclick="$('#history').collapse('toggle');">&times;</a>
+		<table class="table table-condensed">
+			<thead>
+				<tr>
+					<th>Date</th>
+					<th>Action</th>
+					<th>By</th>
+					<th>Explanation</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>2013/04/16 2:58 PM</td>
+					<td>Requires revision</td>
+					<td><a href="#">Deanna Baron</a></td>
+					<td><textarea rows="4" style="width: 300px;">Good Afternoon,
+
+We are unable to approve your e-thesis at this time due to the following formatting issues:
+
+1)	As part of your electronic thesis .PDF document, please correct Convocation term on your Title Page to Fall 2013.  Please see current FGSR thesis submission guidelines on our website for templates for this item via: http://www.gradstudies.ualberta.ca/degreesuperv/thesis/prepare.htm
+2)	Also, please contact your Department to complete a Program Extension as the Spring 2013 Convocation deadline has passed.  The FGSR cannot approve/review your thesis until this extension has been completed.
+
+Please resubmit your e-thesis after updates have been made.
+
+Thank-you,
+Graduate Student Services</textarea></td>
+				</tr>
+				<tr>
+					<td>2013/04/15 2:58 PM</td>
+					<td>Reviewing</td>
+					<td><a href="#">Deanna Baron</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>2013/04/14 2:58 PM</td>
+					<td>Submitted</td>
+					<td><a href="#">Piyapong Charoenwattana</a></td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>

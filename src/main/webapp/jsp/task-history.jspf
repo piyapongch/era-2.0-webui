@@ -1,0 +1,49 @@
+<tr>
+	<td colspan="3" style="border-top: 0;">
+		<div id="history" class="collapse">
+			<div class="alert alert-warning" style="margin-bottom: 0;">
+				<a class="close" href="#" onclick="$('#history').collapse('toggle');">&times;</a>
+				<table class="table table-condensed" style="background-color: #FCF8E3;">
+					<thead>
+						<tr>
+							<th>Date</th>
+							<th>Action</th>
+							<th>By</th>
+							<th>Explanation</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Apr 16, 2013 2:58 PM</td>
+							<td>Requires revision</td>
+							<td><a href="#">Deanna Baron</a></td>
+							<td><textarea rows="4" style="width: 400px;">Good Afternoon,
+
+We are unable to approve your e-thesis at this time due to the following formatting issues:
+
+1)	As part of your electronic thesis .PDF document, please correct Convocation term on your Title Page to Fall 2013.  Please see current FGSR thesis submission guidelines on our website for templates for this item via: http://www.gradstudies.ualberta.ca/degreesuperv/thesis/prepare.htm
+2)	Also, please contact your Department to complete a Program Extension as the Spring 2013 Convocation deadline has passed.  The FGSR cannot approve/review your thesis until this extension has been completed.
+
+Please resubmit your e-thesis after updates have been made.
+
+Thank-you,
+Graduate Student Services</textarea></td>
+						</tr>
+						<tr>
+							<td>Apr 15, 2013 2:58 PM</td>
+							<td>Reviewing</td>
+							<td><a href="#">Deanna Baron</a></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Apr 14, 2013 2:58 PM</td>
+							<td>Submitted</td>
+							<td><a href="#">Piyapong Charoenwattana</a></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</td>
+</tr>

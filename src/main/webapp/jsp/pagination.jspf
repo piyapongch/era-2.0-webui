@@ -1,0 +1,24 @@
+<!-- pagination bottom -->
+<div class="row-fluid">
+	<div class="span12">
+		<div class="text-right search-pagination bottom muted">
+			<div class="pull-left results">Results: 1 - 20 of 73</div>
+			<ul class="inline">
+				<li class="disabled">&laquo;</li>
+				<li><a class="active" href="#">1</a></li>
+				<li><a href="/public/search?q=alberta&amp;fq=&amp;start=20&amp;sort=sort.title asc">2</a></li>
+				<li><a href="/public/search?q=alberta&amp;fq=&amp;start=40&amp;sort=sort.title asc">3</a></li>
+				<li><a href="/public/search?q=alberta&amp;fq=&amp;start=60&amp;sort=sort.title asc">4</a></li>
+				<li><a href="/public/search?q=alberta&amp;fq=&amp;start=80&amp;sort=sort.title asc">5</a></li>
+				<li><a href="/public/search?q=alberta&amp;fq=&amp;start=100&amp;sort=sort.title asc">6</a></li>
+				<li><a href="/public/search?q=alberta&amp;fq=&amp;start=120&amp;sort=sort.title asc">7</a></li>
+				<li><a href="/public/search?q=alberta&amp;fq=&amp;start=140&amp;sort=sort.title asc">8</a></li>
+				<li><a href="/public/search?q=alberta&amp;fq=&amp;start=160&amp;sort=sort.title asc">9</a></li>
+				<li><a href="/public/search?q=alberta&amp;fq=&amp;start=180&amp;sort=sort.title asc">10</a></li>
+				<li class="disabled">...</li>
+				<li><a href="/public/search?q=alberta&amp;fq=&amp;start=21840&amp;sort=sort.title asc">1093</a></li>
+				<li><a href="#">&raquo;</a></li>
+			</ul>
+		</div>
+	</div>
+</div>

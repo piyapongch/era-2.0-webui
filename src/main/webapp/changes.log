@@ -1,0 +1,131 @@
+                     _|                                                          
+ _|_|_|      _|_|_|  _|_|_|      _|_|_|  _|  _|_|    _|_|      _|_|    _|_|_|    
+ _|    _|  _|        _|    _|  _|    _|  _|_|      _|    _|  _|_|_|_|  _|    _|  
+ _|    _|  _|        _|    _|  _|    _|  _|        _|    _|  _|        _|    _|  
+ _|_|_|      _|_|_|  _|    _|    _|_|_|  _|          _|_|      _|_|_|  _|    _|  
+ _|                                                                             
+ _|   _|_| piyapong charoenwattana (piyapong.charoenwattana@gmail.com) _|_|                                                                            
+
++------------------------------------------------------------------------------
+| Changes Log
+| $Id: changes.log 1559 2013-09-20 16:44:58Z Piyapong $
+| University of Alberta
+| Information Technology Services
+| Project: era-2.0 ui
+| Author: Piyapong Charoenwattana (piyapong.charoenwattana@ualberta.ca)
+| Version: $Revision: 1559 $ $Date: 2013-09-20 10:44:58 -0600 (Fri, 20 Sep 2013) $
++------------------------------------------------------------------------------
+
+2013.09.20
+- Modified tooltip color and width;
+- Added tomcat webapp context 2.0.xml.
+
+2013.09.13
+- Minor changes on community page.
+- Added collection page with item list and link to more results.
+- Added link on researchers page to sample researcher page.
+- Added ORCID profile tab on researcher page. 
+
+2013.09.12
+- Changed Site Search drop-down menu to Custom Search.
+- Modified bootstrap tooltip styles.
+- Modified guide search styles.
+- Replaced about link on top navbar with changes link.
+
+2013.09.11
+- Added guides google custom search.
+- Added edit slide images.
+- Added handle link on researcher page.
+- Modified show/hide abstract link on task-item, review pages.
+
+2013.09.05
+- Modified review and task-item show/hide abstract links.
+
+2013.08.30
+- Put mycart popver behide admin popup menu.
+- Added switch between slide image 855x300px and 1000x500px.
+- Changed pagination footer on browse-author and browse-subject.
+
+2013.08.28
+- Minor changes on orcid web service page.
+- Modified css rules for typeahead component.
+
+2013.08.27 - Tag 0.9.3
+- Modified web.xml to use j2ee/web-app_2_4.xsd for deploying on tomcat 5.5 - servlet 2.4.
+- Updated servlet 2.4: jstl.jar, standard.jar.
+- Fixed thumbnail on community page.
+- Fixed contextpath shortcut for servlet 2.4.
+- Added orcid validation on myaccount page.
+- Added orcid service page.
+
+2013.08.26 - Tag 0.9.2
+- Added orcid jsonp service to validate orcid field on edit user form.
+
+2013.08.20 - Tag 0.9.1
+- Minor changes
+- Added button to close date picker popover for date fields.
+
+2013.08.16 - Tag 0.9.0
+- Added edit community, edit collection edit group and permissions, edit user,
+  from message, job schedules pages.
+- Modified researcher page and more.
+- Changed all thumbnail pictures to use thumbnail class.
+- Added form enabled footer on form message page.
+- Fixed navbar top fix margin-bottom space.
+
+2013.07.30
+- Removed sidebar tab on deposit and submit pages.
+
+2013.07.29
+- Redesigned review page using collapsing history, restricted access and explanation.
+- Added admin, reviewer and user roles on login page.
+- Added expandable abstract field on task item view pages. 
+
+2013.05.09
+- Added timelineJS and timeliner.js timeline example.
+- Modified explore page.
+
+2013.05.06 - Tag 0.0.3
+- Added myitem, mysubscription, request-password, request-username, mysubscriptions.
+
+2013.05.03 - Tag 0.0.2
+- Added mytask, review, task-item and task-pool.
+
+2013.04.25 - Tag 0.0.1
+- Added Account Info, Public Profile and Change Password pages.
+- Deployed on AWS new environment era2.
+
+2013.04.23
+- Added feature collections section on home page.
+- Added Explore on main navtab.
+- Added Admin dropdown on topnav.
+- Added Welcome message on myaccount dropdown topnav.
+- Added feature collection slideshow page.
+- Added search scope dropdown on search page.
+- Added timeline JS libraries.
+
+2013.04.18 - Tag P.0.0.1
+- Finished all public view pages screen prototype.
+- Started to record changes to log file.
+- Added my cart checkout page.
+
+2013.04.17
+- Used pdf.js for viewing pdf file on view item page.
+- Used instant.js from CVI project for researcher profile picture.
+- Created gallery page for special collection slideshow page using jquery galleriffic
+  javascript library.
+
+2013.04.16
+- Added browse, deposit, communities, communities, researchers, researcher...
+
+2013.03.21
+- Converted html to jsp and created layout templated using include jsp directive.
+- Added browse.jsp
+
+2013.03.15
+- Modified footer.
+- Added Sign Up and Sign In modal forms.
+- Fixed feeds for recent items and latest news.
+
+2013.03.13 - Start
+- Created project on subversion.

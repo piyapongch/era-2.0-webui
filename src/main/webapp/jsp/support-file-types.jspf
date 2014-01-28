@@ -1,0 +1,342 @@
+
+<!-- supported file types modal -->
+<div id="filetype-modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+	aria-hidden="true">
+	<div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		<h4>
+			Supported file types in
+			<img src="../img/era-63x28.png">
+		</h4>
+	</div>
+	<div class="modal-body">
+		<p>
+			<b>What to do if your format isn't listed:</b><br /> Please contact our <a href="mailto:erahelp@ualberta.ca"
+				class="MB_focusable">helpdesk</a> if you have questions about a particular format.
+		</p>
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Extension</th>
+					<th>MIME Type</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="odd">
+					<td>Adobe PDF</td>
+					<td>pdf</td>
+					<td>application/acrobat</td>
+				</tr>
+				<tr class="even">
+					<td>Adobe PDF</td>
+					<td>pdf</td>
+					<td>application/file</td>
+				</tr>
+				<tr class="odd">
+					<td>MARC</td>
+					<td>marc</td>
+					<td>application/marc</td>
+				</tr>
+				<tr class="even">
+					<td>Mathematica</td>
+					<td>ma</td>
+					<td>application/mathematica</td>
+				</tr>
+				<tr class="odd">
+					<td>Microsoft Access</td>
+					<td>mdb, accdb</td>
+					<td>application/msaccess</td>
+				</tr>
+				<tr class="even">
+					<td>Microsoft Word</td>
+					<td>doc</td>
+					<td>application/msword</td>
+				</tr>
+				<tr class="odd">
+					<td>Microsoft Office 2007</td>
+					<td>docx, xlsx, pptx</td>
+					<td>application/octet-stream</td>
+				</tr>
+				<tr class="even">
+					<td>Adobe PDF</td>
+					<td>pdf</td>
+					<td>application/pdf</td>
+				</tr>
+				<tr class="odd">
+					<td>Postscript</td>
+					<td>ps, eps, ai</td>
+					<td>application/postscript</td>
+				</tr>
+				<tr class="even">
+					<td>Postscript</td>
+					<td>ps</td>
+					<td>application/ps</td>
+				</tr>
+				<tr class="odd">
+					<td>SGML</td>
+					<td>sgm, sgml</td>
+					<td>application/sgml</td>
+				</tr>
+				<tr class="even">
+					<td>Microsoft Excel</td>
+					<td>xls</td>
+					<td>application/vnd.ms-excel</td>
+				</tr>
+				<tr class="odd">
+					<td>Microsoft Powerpoint</td>
+					<td>ppt</td>
+					<td>application/vnd.ms-powerpoint</td>
+				</tr>
+				<tr class="even">
+					<td>Microsoft Project</td>
+					<td>mpp, mpx, mpd</td>
+					<td>application/vnd.ms-project</td>
+				</tr>
+				<tr class="odd">
+					<td>Microsoft Office 2007</td>
+					<td>docx, xlsx, pptx</td>
+					<td>application/vnd.openxmlformats</td>
+				</tr>
+				<tr class="even">
+					<td>Microsoft Office Powerpoint 2007</td>
+					<td>pptx</td>
+					<td>application/vnd.openxmlformats-officedocument.presentationml.presentation</td>
+				</tr>
+				<tr class="odd">
+					<td>Microsoft Office Excel 2007</td>
+					<td>xslx</td>
+					<td>application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</td>
+				</tr>
+				<tr class="even">
+					<td>Microsoft Office Word 2007</td>
+					<td>docx</td>
+					<td>application/vnd.openxmlformats-officedocument.wordprocessingml.document</td>
+				</tr>
+				<tr class="odd">
+					<td>Microsoft Visio</td>
+					<td>vsd</td>
+					<td>application/vnd.visio</td>
+				</tr>
+				<tr class="even">
+					<td>WordPerfect</td>
+					<td>wpd</td>
+					<td>application/wordperfect5.1</td>
+				</tr>
+				<tr class="odd">
+					<td>BZIP2</td>
+					<td>bz2</td>
+					<td>application/x-bzip</td>
+				</tr>
+				<tr class="even">
+					<td>Adobe PDF</td>
+					<td>pdf</td>
+					<td>application/x-download</td>
+				</tr>
+				<tr class="odd">
+					<td>TeX dvi</td>
+					<td>dvi</td>
+					<td>application/x-dvi</td>
+				</tr>
+				<tr class="even">
+					<td>FMP3</td>
+					<td>fm</td>
+					<td>application/x-filemaker</td>
+				</tr>
+				<tr class="odd">
+					<td>Gzip</td>
+					<td>gzip</td>
+					<td>application/x-gzip</td>
+				</tr>
+				<tr class="even">
+					<td>LateX</td>
+					<td>latex</td>
+					<td>application/x-latex</td>
+				</tr>
+				<tr class="odd">
+					<td>PDF</td>
+					<td>pdf</td>
+					<td>application/x-octet-stream</td>
+				</tr>
+				<tr class="even">
+					<td>Adobe PDF</td>
+					<td>pdf</td>
+					<td>application/x-pdf</td>
+				</tr>
+				<tr class="odd">
+					<td>Photoshop</td>
+					<td>psd, pdd</td>
+					<td>application/x-photoshop</td>
+				</tr>
+				<tr class="even">
+					<td>TAR</td>
+					<td>tar</td>
+					<td>application/x-tar</td>
+				</tr>
+				<tr class="odd">
+					<td>TeX</td>
+					<td>tex</td>
+					<td>application/x-tex</td>
+				</tr>
+				<tr class="even">
+					<td>Adobe PDF</td>
+					<td>pdf</td>
+					<td>application/x-unknown-application-pdf</td>
+				</tr>
+				<tr class="odd">
+					<td>ZIP</td>
+					<td>zip</td>
+					<td>application/zip</td>
+				</tr>
+				<tr class="even">
+					<td>Adobe PDF</td>
+					<td>pdf</td>
+					<td>applications/vnd.pdf</td>
+				</tr>
+				<tr class="odd">
+					<td>Audio</td>
+					<td>au, snd</td>
+					<td>audio/basic</td>
+				</tr>
+				<tr class="even">
+					<td>MP3</td>
+					<td>mpeg</td>
+					<td>audio/mpeg</td>
+				</tr>
+				<tr class="odd">
+					<td>WAV</td>
+					<td>wav</td>
+					<td>audio/vnd.wave</td>
+				</tr>
+				<tr class="even">
+					<td>WAV</td>
+					<td>wav</td>
+					<td>audio/wav</td>
+				</tr>
+				<tr class="odd">
+					<td>WAV</td>
+					<td>wav</td>
+					<td>audio/wave</td>
+				</tr>
+				<tr class="even">
+					<td>AIFF</td>
+					<td>aiff, aif, aifc</td>
+					<td>audio/x-aiff</td>
+				</tr>
+				<tr class="odd">
+					<td>MPEG Audio</td>
+					<td>mpa, abs, mpega</td>
+					<td>audio/x-mpeg</td>
+				</tr>
+				<tr class="even">
+					<td>RealAudio</td>
+					<td>ra, ram</td>
+					<td>audio/x-pn-realaudio</td>
+				</tr>
+				<tr class="odd">
+					<td>WAV</td>
+					<td>wav</td>
+					<td>audio/x-pn-wav</td>
+				</tr>
+				<tr class="even">
+					<td>WAV</td>
+					<td>wav</td>
+					<td>audio/x-wav</td>
+				</tr>
+				<tr class="odd">
+					<td>GIF</td>
+					<td>gif</td>
+					<td>image/gif</td>
+				</tr>
+				<tr class="even">
+					<td>JPEG</td>
+					<td>jpeg, jpg</td>
+					<td>image/jpeg</td>
+				</tr>
+				<tr class="odd">
+					<td>JPEG</td>
+					<td>jpeg</td>
+					<td>image/pjpeg</td>
+				</tr>
+				<tr class="even">
+					<td>PNG</td>
+					<td>png</td>
+					<td>image/png</td>
+				</tr>
+				<tr class="odd">
+					<td>TIFF</td>
+					<td>tiff, tif</td>
+					<td>image/tiff</td>
+				</tr>
+				<tr class="even">
+					<td>BMP</td>
+					<td>bmp</td>
+					<td>image/x-ms-bmp</td>
+				</tr>
+				<tr class="odd">
+					<td>Photo CD</td>
+					<td>pcd</td>
+					<td>image/x-photo-cd</td>
+				</tr>
+				<tr class="even">
+					<td>PNG</td>
+					<td>png</td>
+					<td>image/x-png</td>
+				</tr>
+				<tr class="odd">
+					<td>HTML</td>
+					<td>html, htm</td>
+					<td>text/html</td>
+				</tr>
+				<tr class="even">
+					<td>Adobe PDF</td>
+					<td>pdf</td>
+					<td>text/pdf</td>
+				</tr>
+				<tr class="odd">
+					<td>Text</td>
+					<td>txt, asc</td>
+					<td>text/plain</td>
+				</tr>
+				<tr class="even">
+					<td>RTF</td>
+					<td>rtf</td>
+					<td>text/richtext</td>
+				</tr>
+				<tr class="odd">
+					<td>Adobe PDF</td>
+					<td>pdf</td>
+					<td>text/x-pdf</td>
+				</tr>
+				<tr class="even">
+					<td>XML</td>
+					<td>xml</td>
+					<td>text/xml</td>
+				</tr>
+				<tr class="odd">
+					<td>MP4</td>
+					<td>mp4</td>
+					<td>video/mp4</td>
+				</tr>
+				<tr class="even">
+					<td>MPEG</td>
+					<td>mpeg, mpg, mpe</td>
+					<td>video/mpeg</td>
+				</tr>
+				<tr class="odd">
+					<td>Video Quicktime</td>
+					<td>mov, qt</td>
+					<td>video/quicktime</td>
+				</tr>
+				<tr class="even">
+					<td>WMV</td>
+					<td>wmv</td>
+					<td>video/x-ms-wmv</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="modal-footer">
+		<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+	</div>
+</div>

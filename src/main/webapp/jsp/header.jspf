@@ -1,0 +1,35 @@
+<%@ include file="/jsp/jspheader.jspf" %>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="author" content="Piyapong Charoenwattana" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="${ctx}/img/favicon.ico">
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+	<script src="${ctx}/js/html5shiv.js"></script>
+<![endif]-->
+<link href="${ctx}/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<style type="text/css">
+body {
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+</style>
+<link href="${ctx}/css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
+<link href="${ctx}/css/datepicker.css" rel="stylesheet" media="screen">
+<link href="${ctx}/css/bootstrap-fileupload.min.css" rel="stylesheet" media="screen">
+<link href="${ctx}/css/era.css" rel="stylesheet" media="screen">
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="${ctx}/js/bootstrap.min.js"></script>
+<script src="${ctx}/js/bootstrap-datepicker.js"></script>
+<script src="${ctx}/js/bootstrap-fileupload.min.js"></script>
+<script src="${ctx}/js/bootstrap-hover-dropdown.min.js"></script>
+<script src="${ctx}/js/holder.js"></script>
+<script src="${ctx}/js/era.js"></script>
+
+<!-- feeds -->
+<link rel="alternate" type="application/rss+xml" title="ERA: New Items"
+	href="https://era.library.ualberta.ca/public/feed/item/rss_2.0" />
+<link rel="alternate" type="application/rss+xml" title="ERA: New Collections"
+	href="https://era.library.ualberta.ca/public/feed/collection/rss_2.0" />
+<link rel="alternate" type="application/rss+xml" title="ERA: New Communities"
+	href="https://era.library.ualberta.ca/public/feed/community/rss_2.0" />

@@ -1,0 +1,327 @@
+<!-- $Id: navbar.jspf 1557 2013-09-13 22:03:30Z pcharoen $ -->
+<div class="navbar navbar-fixed-top" id="navbar-top">
+	<div class="navbar-inner">
+		<div class="container">
+			<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span
+				class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button>
+			<div class="nav-collapse collapse pull-right">
+				<ul class="nav">
+					<li><button class="btn btn-small btn-info" data-toggle="modal" data-target="#signup-modal">Sign Up</button></li>
+					<c:if test="${empty user}">
+						<li><a href="#" data-toggle="modal" data-target="#signin-modal">Sign In</a></li>
+					</c:if>
+					<li><a href="https://github.com/ualbertalib/era/wiki/Changes" target="_blank">Changes<sup>new</sup></a></li>
+<!-- 					<li><a href="http://guides.library.ualberta.ca/content.php?pid=87240&sid=648950">About</a></li> -->
+					<li><a href="http://guides.library.ualberta.ca/content.php?pid=87240&sid=648971">Help</a></li>
+					<c:choose>
+						<c:when test="${not empty user}">
+							<li class="dropdown"><a id="topnav-dropdown" href="#" class="dropdown-toggle" data-toggle="dropdown"
+								data-hover="dropdown" data-close-others="true"><i class="icon-user dim"></i> my era <b class="caret"></b> </a>
+								<ul class="dropdown-menu">
+									<li class="disabled"><a href="#" style="color: #007C41; padding-left: 15px;">Piyapong Charoenwattana</a></li>
+									<li class="divider"></li>
+									<c:if test="${role == 'reviewer' || role == 'admin'}">
+										<li class="disabled hidden-phone menu-title"><a href="#">Reviewer</a></li>
+										<li class="hidden-phone"><a href="${ctx}/jsp/task-pool.jsp">Task in the Pool</a></li>
+										<li class="hidden-phone"><a href="${ctx}/jsp/mytask.jsp">My Tasks</a></li>
+										<li class="hidden-phone"><a href="${ctx}/jsp/embargoed.jsp">Restricted Access Items</a></li>
+										<li class="divider hidden-phone"></li>
+									</c:if>
+									<li class="disabled menu-title"><a href="#">My Account</a></li>
+									<li><a href="${ctx}/jsp/myaccount-info.jsp">Account Info</a></li>
+									<li><a href="${ctx}/jsp/edit-myprofile.jsp">Public Profile</a></li>
+									<li><a href="${ctx}/jsp/change-password.jsp">Change Password</a></li>
+									<li class="hidden-phone"><a href="${ctx}/jsp/myitem.jsp">My Items</a></li>
+									<li class="hidden-phone"><a href="${ctx}/jsp/mysubscription.jsp">My Subscriptions</a></li>
+									<li class="divider"></li>
+									<li><a href="${ctx}/jsp/signout.jsp">Sign Out</a></li>
+								</ul></li>
+						</c:when>
+						<c:otherwise>
+							<li class="dropdown"><a href="${ctx}/jsp/signin-form.jsp"><i class="icon-user dim"></i> my era</a></li>
+						</c:otherwise>
+					</c:choose>
+					<c:if test="${role == 'admin'}">
+						<li class="dropdown hidden-phone"><a href="#" class="dropdown-toggle" data-toggle="dropdown"
+							data-hover="dropdown"><i class="icon-wrench dim"></i> admin <b class="caret"></b> </a>
+							<ul class="dropdown-menu">
+								<li class="disabled menu-title"><a href="#">Maintenance</a></li>
+								<li><a href="${ctx}/jsp/admin-communities.jsp">Manage Communities</a></li>
+								<li><a href="${ctx}/jsp/admin-collections.jsp">Manage Collections</a></li>
+								<li><a href="${ctx}/jsp/admin-groups.jsp">Manage Groups</a></li>
+								<li><a href="${ctx}/jsp/admin-users.jsp">Manage Users</a></li>
+								<li class="divider"></li>
+								<li class="disabled menu-title"><a href="#">Tools</a></li>
+								<li><a href="${ctx}/jsp/login-as.jsp">Login As</a></li>
+								<li><a href="${ctx}/jsp/edit-slide-images.jsp">Slide Images</a></li>
+								<li><a href="${ctx}/jsp/admin-message.jsp">Admin Message</a></li>
+								<li><a href="${ctx}/jsp/form-message.jsp">Form Message</a></li>
+								<li><a href="${ctx}/jsp/job-schedules.jsp">Job Schedules</a></li>
+								<li class="divider"></li>
+								<li class="disabled menu-title"><a href="#">Web Services</a></li>
+								<li><a href="${ctx}/orcid">ORCID REST Services</a></li>
+								<%-- 
+								<li class="divider"></li>
+								<li class="disabled"><a href="#" style="color: #007C41; font-weight: bold; padding-left: 15px;">Job
+										Schedules</a></li>
+								<li><a href="${ctx}/jsp/subscriptions.jsp">Resend Subscription Emails</a></li>
+								<li><a href="${ctx}/jsp/embargoed.jsp">Restricted Access Publisher</a></li>
+								<li><a href="${ctx}/jsp/index-builder.jsp">Inder Buider</a></li>
+								<li><a href="${ctx}/jsp/proquest-uploader.jsp">Proquest Upload</a></li>
+								<li><a href="${ctx}/jsp/facebook.jsp">Facebook Page Publisher</a></li>
+								--%>
+							</ul></li>
+					</c:if>
+					<li class="dropdown hidden-phone"><a id="mycart" class="dropdown-toggle" href="#" data-toggle="popover"
+						data-container="#navbar-top" data-placement="bottom"><i class="icon-shopping-cart dim"></i> my cart (3) <b
+							class="caret"></b></a></li>
+				</ul>
+				<form id="search-form" class="navbar-form pull-right" action="search.jsp">
+					<div class="btn-group input-append">
+						<input id="q" class="span2" type="text" placeholder="Keywords" name="q">
+						<button class="btn"><i class="icon-search"></i></button>
+						<button class="btn dropdown-toggle input-prepend" data-toggle="dropdown" data-hover="dropdown"><span
+							class="caret"></span></button>
+						<ul class="dropdown-menu pull-right">
+							<li><a href="${ctx}/jsp/search.jsp">Basic search</a></li>
+							<li><a href="${ctx}/jsp/advanced-search.jsp">Advance search</a></li>
+							<li><a href="#" onclick="sitesearch();">Custom search</a></li>
+							<li><a href="#" onclick="guidessearch();">Guides search</a></li>
+						</ul>
+					</div>
+				</form>
+				<script>
+					function sitesearch() {
+	                    location.href = '${ctx}/jsp/site-search.jsp?q=' + $('#q').prop('value');
+                    }
+					function guidessearch() {
+	                    location.href = '${ctx}/jsp/guides-search.jsp?q=' + $('#q').prop('value');
+                    }
+				</script>
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+	</div>
+</div>
+
+<!-- Sign Up Modal -->
+<div id="signup-modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="signup-label"
+	aria-hidden="true">
+	<div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		<h4 id="signup-label">
+			Register to use
+			<img src="${ctx}/img/era-63x28.png">
+			</span>
+		</h4>
+	</div>
+	<form class="form-horizontal" style="margin-bottom: 0;">
+		<div class="modal-body">
+			<p class="muted">Registration will allow you to deposit items, build a personal researcher page and save links to
+				items.</p>
+			<div class="control-group">
+				<label class="control-label" for="inputEmail">First Name</label>
+				<div class="controls">
+					<input type="text" id="inputEmail" placeholder="First name">
+				</div>
+			</div>
+			<div class="control-group">
+				<label class="control-label" for="inputEmail">Last Name</label>
+				<div class="controls">
+					<input type="text" id="inputEmail" placeholder="Last Name">
+				</div>
+			</div>
+			<div class="control-group">
+				<label class="control-label" for="inputEmail">Email</label>
+				<div class="controls">
+					<input type="text" id="inputEmail" placeholder="Email">
+				</div>
+			</div>
+			<div class="control-group">
+				<label class="control-label" for="inputEmail">Username</label>
+				<div class="controls">
+					<input type="text" id="inputEmail" placeholder="Username">
+				</div>
+			</div>
+			<div class="control-group">
+				<label class="control-label" for="inputPassword">Password</label>
+				<div class="controls">
+					<input type="password" id="inputPassword" placeholder="Password">
+				</div>
+			</div>
+			<div class="control-group">
+				<label class="control-label" for="inputPassword">Confirm Password</label>
+				<div class="controls">
+					<input type="password" id="inputPassword" placeholder="Confirm Password">
+				</div>
+			</div>
+		</div>
+		<div class="modal-footer">
+			<button class="btn btn-primary" data-dismiss="modal">Join <i class="icon-era-mini"></i>
+			</button>
+			<button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+		</div>
+	</form>
+</div>
+
+<!-- Sign In Modal -->
+<div id="signin-modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="signin-label"
+	aria-hidden="true">
+	<div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		<h4 id="signin-label">
+			Login to
+			<img src="${ctx}/img/era-63x28.png">
+			</span>
+		</h4>
+	</div>
+	<form class="form-horizontal" style="margin-bottom: 0;" action="${ctx}/jsp/signin.jsp">
+		<div class="modal-body">
+			<p class="muted">
+				or <a href="${ctx}/jsp/signup.jsp">register</a> now, it only takes a minute!
+			</p>
+			<div class="control-group">
+				<label class="control-label" for="inputEmail">Username</label>
+				<div class="controls">
+					<input type="text" id="inputEmail" placeholder="Enter admin, reviewer or user" name="username">
+				</div>
+			</div>
+			<div class="control-group">
+				<label class="control-label" for="inputPassword">Password</label>
+				<div class="controls">
+					<input type="password" id="inputPassword" placeholder="Password">
+				</div>
+			</div>
+		</div>
+		<div class="modal-footer">
+			<button type="submit" class="btn btn-primary">Login to <i class="icon-era-mini"></i>
+			</button>
+			<button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+		</div>
+	</form>
+</div>
+
+<!-- mycart popover -->
+<div id="mycart-title" class="hide">
+	<div class="mycart-title">
+		<a class='close' href='#' onclick='hideMycart();'>&times;</a>
+		<h4>my cart</h4>
+		This is your space to compile items as you explore <strong><em>era's</em></strong> content and download them all at
+		once.
+	</div>
+</div>
+
+<div id="mycart-content" class="hide">
+	<div class="mycart-content">
+		<div>
+			<ul class="unstyled">
+				<li><a href="#" onclick="$(this).parent().remove();"><i class="icon-remove-circle dim"
+						style="float: right;"></i></a> <a href="/public/view/item/uuid:57604d6a-c1a0-486c-93f5-2adefce8c688">Planning
+						practices of Planning and Research Branch, Alberta Department of Education</a><br>by Okello, Lekoboam<br>In
+					partial fulfilment of the requirements for the degree of Doctor...</li>
+				<li><a href="#" onclick="$(this).parent().remove();"><i class="icon-remove-circle dim"
+						style="float: right;"></i></a><a href="/public/view/item/uuid:8bf43e0b-abdc-4ef7-a926-1571dd44b4a1">Responses of
+						tamarack and black spruce forests to drainage, thinning and fertilization of Alberta peatlands</a> <br>by
+					Mugasha, Ancelm Godfrey.<br>Submitted to the Faculty of Graduate Studies and Research in...</li>
+				<li><a href="#" onclick="$(this).parent().remove();"><i class="icon-remove-circle dim"
+						style="float: right;"></i></a><a href="/public/view/item/uuid:d6e18a51-9c86-4c99-8d95-e6d84c9e2557">A valuation of
+						Alberta's major consumptive wildlife resources</a> <br>by Wilson, W. Robert.<br>Bibliography: p. 140-148.</li>
+			</ul>
+		</div>
+		<div class="text-right">
+			<button id="btn-checkout" class="btn btn-small btn-primary" onclick="location.href='${ctx}/jsp/mycart.jsp';">Checkout</button>
+			<button class="btn btn-small" type="button" onclick="hideMycart();">Close</button>
+		</div>
+	</div>
+</div>
+
+<script>
+	$('#mycart')
+        .popover(
+            {
+                trigger : 'manual',
+                html : true,
+                title : $('#mycart-title').html(),
+                content : $('#mycart-content').html(),
+                template : '<div style="z-index: 990;" class="popover mycart" onmouseover="$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div>'
+                    + '<div class="popover-inner"><div class="popover-title"></div><div class="popover-content"><p></p></div></div></div>'
+            });
+    $('#mycart').on('mouseover', function() {
+	    $('#mycart').popover('show');
+    });
+
+    function hideMycart() {
+	    $('#mycart').popover('hide');
+    }
+</script>
+
+<!-- page header -->
+<div class="header">
+	<h3 class="header-bg gradient">
+		<img style="cursor: pointer;" src="${ctx}/img/eraheader.png" onclick="location.href='${ctx}/jsp/home.jsp';" />
+		Education and Research Archive
+	</h3>
+</div>
+
+<!-- \start main navbar -->
+<div>
+	<div class="navbar">
+		<div class="navbar-inner">
+			<div class="container">
+				<a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-responsive-collapse"> <span
+					class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+				</a>
+				<div class="nav-collapse collapse navbar-responsive-collapse">
+					<ul class="nav main-navbar">
+						<li class="divider-vertical"></li>
+						<li><a href="${ctx}/jsp/home.jsp">Home</a></li>
+						<li class="divider-vertical"></li>
+						<li><a href="${ctx}/jsp/browse.jsp">Browse</a></li>
+						<li class="divider-vertical hidden-phone"></li>
+						<li class="hidden-phone"><a href="${ctx}/jsp/explore.jsp">Explore</a></li>
+						<!-- 
+						<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Browse <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="${ctx}/jsp/browse.jsp">Browse All</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Book</a></li>
+								<li><a href="#">Book Chapter</a></li>
+								<li><a href="#">Conference/Workshop Poster</a></li>
+								<li><a href="#">Conference/Workshop Presentation</a></li>
+								<li><a href="#" data-toggle="tooltip" data-placement="right"
+									title="a group of files associated with research that often include a data file, a codebook, or myriad other forms of data">Dataset</a></li>
+								<li><a href="#">Journal Article (Draft-submitted)</a></li>
+								<li><a href="#">Journal Article (Published) </a></li>
+								<li><a href="#">Learning Object</a></li>
+								<li><a href="#">Report</a></li>
+								<li><a href="#">Research Material</a></li>
+								<li><a href="#">Review</a></li>
+								<li><a href="#">Thesis</a></li>
+							</ul></li>
+						 -->
+						<li class="divider-vertical hidden-phone"></li>
+						<li class="dropdown hidden-phone"><a href="${ctx}/jsp/deposit.jsp" class="dropdown-toggle"
+							data-hover="dropdown" data-toggle="dropdown">Deposit <b class="caret"></b>
+						</a>
+							<ul class="dropdown-menu">
+								<li><a href="${ctx}/jsp/deposit.jsp" style="font-weight: bold;">Deposit your item</a></li>
+								<li><a href="${ctx}/jsp/submit.jsp" style="font-weight: bold;">Submit your thesis</a></li>
+								<li class="divider"></li>
+								<li><a href="${ctx}/jsp/deposit.jsp">Deposit to SER collection</a></li>
+								<li><a href="${ctx}/jsp/deposit.jsp">Deposit to TR collection</a></li>
+							</ul></li>
+						<li class="divider-vertical"></li>
+						<li><a href="${ctx}/jsp/communities.jsp">Communities</a></li>
+						<li class="divider-vertical"></li>
+						<li><a href="${ctx}/jsp/researchers.jsp">Researchers</a></li>
+						<li class="divider-vertical"></li>
+						<li><a href="http://guides.library.ualberta.ca/content.php?pid=87240&sid=648971" style="font-weight: normal;">Contact
+								us</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /.navbar -->
+</div>
+<!-- /end navbar -->
