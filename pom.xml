@@ -6,7 +6,25 @@
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>ERA 2.0 WebUI</name>
-	<url>http://maven.apache.org</url>
+	<url>http://era.library.ualberta.ca</url>
+	<developers>
+		<developer>
+			<id>piyapongch</id>
+			<name>Piyapnog</name>
+			<email>piyapong.charoenwattana@ualberta.ca</email>
+			<url>http://pcharoen.wordpress.com/</url>
+			<organization>University of Alberta Libraries</organization>
+			<organizationUrl>http://library.ualberta.ca</organizationUrl>
+			<roles>
+				<role>architect</role>
+				<role>developer</role>
+			</roles>
+			<timezone>-7</timezone>
+			<properties>
+				<picUrl>http://en.gravatar.com/pcharoen</picUrl>
+			</properties>
+		</developer>
+	</developers>
 	<properties>
 		<java-version>1.6</java-version>
 	</properties>
