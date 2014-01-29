@@ -6,8 +6,8 @@ ERA 2.0 Web User Interface Prototype
 
 ## Building & running era-2.0-webui from source
 System Requirements
-+ Java 6
-+ Maven 3
++ Java 6,7
++ Maven 3 <http://maven.apache.org/>
 ```shell
 $ git clone https://github.com/ualbertalib/era-2.0-webui.git
 $ cd era-2.0-webui
