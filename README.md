@@ -1,12 +1,10 @@
-# hydra-demo
-Hydra with backlight demo web application
+# era-2.0-webui
+ERA 2.0 Web User Interface Prototype
 
-## System Requirements
-Your system should have the following installed before beginning the walkthrough
-+ ruby <https://www.ruby-lang.org/en/> 1.9.3 or 2.0.0
-+ rails <http://rubyonrails.org/> ~>3.2.13 or ~>4.0.0
-+ git <http://git-scm.com/>
-+ java <http://www.java.com/en/> runtime >= 6.0
+## Technologies
++ JSP 2.1
++ JSTL 1.2
++ Bootstrap-2.3.1
 
 ## Building & running era-2.0-webui from source
 ### System Requirements
